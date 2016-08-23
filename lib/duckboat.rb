@@ -1,9 +1,8 @@
-require_relative 'boat'
+require_relative 'baot'
 require_relative 'water_fowl'
 require_relative 'passenger'
 
 class Duckboat
-  include Boat
   include Water_fowl
 
   attr_reader :passengers
