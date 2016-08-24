@@ -24,7 +24,6 @@ Some common Ruby errors:
 
 `SystemStackError`: "Stack level too deep!" This almost always happens when you have an unterminated `while` loop, a method that calls itself without conclusion, or other structure that keeps going indefinitely. Your system runs out of space and you get a "[stack overflow](https://en.wikipedia.org/wiki/Stack_overflow)." (`infinite_loop`)
 
-
 ---
 
 ### Time to Pry
@@ -62,6 +61,13 @@ rspec
 Duckboat.included_modules
 Duckboat.included_modules.include?(Boat)
 Duckboat.included_modules.include?(Water_fowl)
+```
+
+another cool way is to step into an object
+
+```ruby
+cd new_boat
+ls # take a look around and check your assumptions
 ```
 
 Step 3: running the method but unexpected return value, Inheritance Tree
@@ -112,3 +118,5 @@ Find modules included in a class
 ```ruby
 Array.included_modules
 ```
+
+Step into objects with cd, poke around with ls
