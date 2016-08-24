@@ -120,3 +120,6 @@ Array.included_modules
 ```
 
 Step into objects with cd, poke around with ls
+```ruby
+show-source method_name
+```
