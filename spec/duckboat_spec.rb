@@ -18,6 +18,7 @@ RSpec.describe Duckboat do
 
   describe "#captain" do
     it "returns the name of the captain" do
+      new_boat.captain = Passenger.new("Nick")
       expect(new_boat.captain.name).to eq "Nick"
     end
   end
